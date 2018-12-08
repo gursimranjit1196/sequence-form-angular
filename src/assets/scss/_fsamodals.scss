@@ -1,0 +1,288 @@
+.fsaPlans {
+	display: table;
+	border-left: 1px solid $septenary-color;
+	.plan-card {
+		border-right: 1px solid $septenary-color;
+		border-top: 1px solid $septenary-color;
+		border-bottom: 1px solid $septenary-color;
+		width: 33%;
+		margin: 0 0 0 -1px;
+		display: table-cell;
+		&:last-child {
+			border-right: 0;
+		}
+		.title {
+			background: $quaternary-color;
+			h3{
+				font-size: 19px;
+				line-height: 28px;
+				padding: 13px 1px;
+				color: $light-color;
+				font-weight: 400;
+				font-family: $secondary-Regular;
+			}
+		} 
+		.plan-body {
+			padding: 25px;
+			background: $quaternary-color2;
+			min-height: 175px;
+			p{
+				font-size: 16px;
+				line-height: 28px;
+				padding: 0 0 0;
+				font-weight: 400;
+				font-family: $secondary-Regular;
+			}
+		}
+		.plan-footer {
+			padding: 25px;
+		}
+	}
+}
+
+.fsa_plan_summary {
+	.plan-list {
+		.plan-item {
+			padding: 30px 0;
+			border-bottom: 1px solid $black;
+			.plan-detail {
+				position: relative;
+				padding: 0 150px 0 30px;
+				min-height: 45px;
+				p{
+					margin-bottom: 0;
+					font-size: 20px;
+					img.pdf-img {
+						position: relative;
+						top: -4px;
+					}
+				}
+				.modify {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					width: 140px;
+				}
+				.pdf-downloads {
+					p > {
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						width: 100%;
+						a{
+							margin-top: -6px;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							width: 100%;
+							display: inline-block;
+						}
+					}
+
+				}
+				&.plan-detail-withtable {
+					p {
+						float: left;
+					}
+				}
+			}
+			&:last-child {
+				border: none;
+			}
+			.incomplete {
+				display: block;
+				color: $primary-color;
+				font-size: 20px;
+				font-weight: 700;
+				strong{
+					font-weight: 600;
+				}
+				i{
+					font-size: 30px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+	.plandetail-group {
+		h5 {
+			position: relative;
+			font-size: 20px;
+			font-weight: 400;
+			padding: 15px 150px 15px 0;
+			.incomplete{
+				position: absolute;
+				right: 0;
+				top: 12px;
+				color: #ab2328;
+			    font-size: 20px;
+			    strong{
+					font-weight: 500;
+				}
+			}
+		}
+		.detail-box {
+			border: 1px solid $black;
+			margin-bottom: 35px;
+			.details {
+				padding: 35px;
+				p{
+					font-size: 18px;
+				}
+			}
+			.foot {
+				background: $quaternary-color2;
+				padding: 13px 35px;
+			}
+		}
+	}
+}
+.fsa-plan-summary-table {
+	float: left;
+	table {
+		width: auto;
+		min-width: 300px;
+		max-width: 400px;
+		margin-bottom: 0px;
+	}	
+	tbody {
+		tr {
+			td {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				font-size: 20px;
+				line-height: 24px;
+				font-weight: 400;
+				color: $black;
+			}
+		}
+	}	
+}
+
+@media only screen and (max-width: 991px)  {
+	.fsaPlans {
+		.plan-card {
+			.title {
+				h3 {
+					font-size: 14px;
+    				line-height: 18px;
+				}
+			}
+			.plan-body {
+				p {
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
+			.plan-footer {
+				a.btn{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px)  {
+	.fsaPlans {
+		display: block;
+		border: none;
+		.plan-card {
+			border: 1px solid $septenary-color;
+			width: 100%;
+			display: block;
+			margin-bottom: 15px;
+			.plan-body {
+				min-height: 0;
+				padding: 10px;
+			}
+			.plan-footer{
+				padding: 10px;
+			}
+		}
+	}
+	.fsa_plan_summary {
+		.plan-list {
+			.plan-item {
+				padding: 15px 0;
+				.plan-detail {
+					padding: 0 150px 0 15px;
+					p{
+						font-size: 16px;
+					}
+					.incomplete {
+						font-size: 16px;
+						i{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+		.plandetail-group {
+			h5{
+				padding: 15px 0;
+				.incomplete {
+					position: relative;
+				    display: block;
+				    margin-bottom: 10px;
+				}
+			}
+			.detail-box {
+				.details {
+					padding: 15px;
+					p{
+						font-size: 16px;
+					}
+				}
+				.foot{
+					padding: 13px 15px;
+				}
+			}
+		}
+	}
+	.fsa-plan-summary-table {
+		border: none;
+		margin-bottom: 0px;
+		width: auto;
+		.table {
+			margin-bottom: 10px;			
+			tbody {
+				tr {
+					td {
+						font-size: 16px;						
+					}
+				}
+			}		
+		}
+	}
+}
+
+@media only screen and (max-width: 767px)  {
+	.fsa_plan_summary {
+		.plan-list {
+			.plan-item {
+				.plan-detail {
+					padding: 0 15px 0 15px; 
+					.modify {
+						display: block;
+						position: relative;
+						width: 100%;
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 599px)  { 
+	.fsa-plan-summary-table {		
+		width: 100%;
+		.table {			
+			min-width: auto;
+			max-width: inherit;
+			width: 100%;	
+		}
+	}
+}
+

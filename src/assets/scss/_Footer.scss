@@ -1,0 +1,177 @@
+ /*.footerCntr {
+ 	position: relative;
+ 	a {
+ 		font-weight: 400;
+ 		&:hover {
+ 			color: $secondary-color;
+ 		}
+ 	}
+ 	.relative {
+	 	padding: 0 0 35px 0;
+	 	min-height: 400px;
+	}
+ 	h4 {
+ 		margin-top: 35px;
+ 		font-weight: 700;
+ 		color: $primary-color;
+ 		margin-bottom: 15px;
+ 	}
+ 	.logo-div {
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+ 		padding: 102px 0 25px 0;
+ 		height: 100%;
+ 		text-align: right;
+ 		width: 25%;
+ 		border-left: 1px solid #000;
+ 		a {
+ 			text-align: right;
+ 			img {
+ 				display: inline-block;
+ 				margin: 0 auto;
+ 			} 
+ 		}
+ 	}
+ }*/
+ .innerFooter {
+ 	width: 100%;
+ 	position: absolute;
+ 	height: 56px;
+ 	margin-top: -56px;
+ 	bottom: 0px;
+ 	background: $senary-color;
+ 	float: left;
+ 	overflow: hidden;
+ 	width: 100%;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	.left {
+ 		float: left;
+	 	.footer-sm-logo {
+	 		height: 40px;
+	 		width: 40px;
+	 		display: inline-block;
+	 		vertical-align: middle;
+	 		background: url(../images/footer-logo.png) no-repeat center center;
+	 		background-size: 35px 40px;
+	 		margin-right: 7px;
+	 	}
+	 	.social-links {
+	 		display: inline-block;
+	 		margin-bottom: 0;
+	 		vertical-align: middle;
+	 		margin-right: 10px;
+	 		li {
+	 			vertical-align: middle;
+	 			display: inline-block;
+	 			a {
+	 				height: 22px;
+	 				width: 22px;
+	 				display: block;
+	 				vertical-align: middle;
+	 				border-radius: 2px;
+	 				&.fb{
+	 					background: url(../images/fb-icon.png) no-repeat center center;
+	 					background-size: 22px 22px;
+	 				}
+	 				&.twitter{
+	 					background: url(../images/twit-icon.png) no-repeat center center;
+	 					background-size: 22px 22px;
+	 				}
+	 				&.youtube{
+	 					background: url(../images/youtube-icon.png) no-repeat center center;
+	 					background-size: 22px 22px;
+	 				}
+	 				&.linkedin{
+	 					background: url(../images/linkedin-icon.png) no-repeat center center;
+	 					background-size: 22px 22px;
+	 				}
+	 				&:hover {
+	 					opacity: 0.8;
+	 				}
+	 			}
+	 		}
+	 	}
+	 	.footer-links {
+	 		display: inline-block;
+	 		margin-bottom: 0;
+	 		vertical-align: middle;
+	 		li {
+	 			line-height: 7px;
+			    border-right: 1px solid $octonary-color;
+			    padding: 0 9px 2px 6px;
+	 			&:last-child {
+	 				border-right: none;
+	 			}
+	 			a {
+	 				font-size: 11px;
+	 				color: $octonary-color;
+	 				text-decoration: none;
+	 				font-weight: 400;
+	 				&:hover {
+	 					color: $light-color
+	 				}
+	 			}
+	 		}
+	 	}
+	 	.copyright {
+	 		font-size: 11px;
+	 		color: #ffffff;
+	 		margin-bottom: 0;
+	 		display: inline-block;
+	 		margin-right: 10px;
+	 		vertical-align: middle;
+	 	}
+	 }
+ }
+
+@media only screen and (max-width: 1279px)  {
+
+}
+
+@media only screen and (max-width: 991px)  {}
+
+@media only screen and (max-width: 767px)  {
+	/*.footerCntr {
+		.relative {
+			min-height: auto;
+			padding: 0;
+		}
+		.logo-div {
+			border: none;
+			padding: 0;
+			margin: 5px auto;
+			position: static;
+		}
+	}*/
+	.innerFooter {
+		position: static;
+		height: auto;
+		margin-top: 0px;
+		.left {
+			float: none;
+			text-align: center;
+			.footer-links {
+				display: block;
+				margin-top: 10px;
+				margin-left: 0;
+			}
+			.footer-sm-logo {
+				display: block;
+				margin: 0 auto 10px;
+			}
+			.copyright {
+				display: block;
+				margin: 0 0 10px;
+			}
+			.social-links {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 599px)  {
+}

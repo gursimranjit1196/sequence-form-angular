@@ -1,0 +1,89 @@
+.modal {
+	&.form-modal-box {
+		.modal-content {
+			@include border-radius(10px);
+		}
+		.modal-header {
+			padding: 15px 50px 10px;
+			background-color: $senary-color;
+			@include border-radius(8px 8px 0 0);
+			h2 {
+				color: $light-color;
+			}
+		}
+		.modal-body {
+			padding: 50px;
+		}
+	}
+}
+
+/*Table*/
+.table {
+	&.plan-overview-table {
+		margin-bottom: 0px;
+		tr {			
+			td, th {
+				font-weight: 400;
+				font-size: 19px;
+				color: $black;				
+			}
+			th {
+				padding-bottom: 20px;
+				font-family: $secondary-Regular;
+				font-weight: 700;
+				border-bottom-color: transparent;
+			}
+			&:first-child {
+				td {
+					border-top-color: transparent;
+				}				
+			}
+
+		}
+		span {
+			&.description {
+				max-width: 90%;
+				display: block;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+		}
+		.caret-arrow {
+			font-size: 22px;
+		}	
+		.edit-closed-btn {
+			float: right;
+			margin-right: 10px;
+		}	
+	}
+}
+
+@media only screen and (max-width: 991px)  { 
+	.modal {
+		&.form-modal-box {
+			.modal-header {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.modal-body {
+				padding: 20px;				
+			}
+		}
+	}
+	.table {
+		&.plan-overview-table {
+			margin-bottom: 0px;
+			tr {			
+				td, th {					
+					font-size: 16px;					
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px)  { 
+	
+}	
+

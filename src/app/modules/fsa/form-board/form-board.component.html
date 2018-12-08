@@ -1,0 +1,18 @@
+<button #modalButton type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click) = "onModalClick()" hidden></button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">FSA</h4>
+        <button type="button" class="close" data-dismiss="modal" (click)="onModalClose($event)">&times;</button>
+      </div>
+
+      <template #modalBody></template>
+
+    </div>
+  </div>
+</div>

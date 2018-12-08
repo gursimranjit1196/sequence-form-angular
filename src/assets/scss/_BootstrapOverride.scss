@@ -1,0 +1,60 @@
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-xs-15 {
+	width: 20%;
+	float: left;
+}
+
+label {
+	font-size: 19px; 
+	line-height: 26px; 
+	color: $black;
+	font-weight: normal;
+
+	margin-bottom: 6px;
+}
+.form-control {
+	border: 1px solid $black;
+	height: 36px;
+	font-size: 16px;
+	color: $black;
+	@include border-radius(0px);
+	font-weight: 400;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+select {
+	height: 36px;
+	&.form-control {
+		padding: 0 12px;		
+		height: 36px;
+		line-height: 30px;
+	}
+}
+textarea {
+	&.form-control {
+	}
+}
+
+
+@media (max-width: 991px) {
+	label {
+		font-size: 17px; 		
+	}
+}
+
+@media (max-width: 767px) {
+	label {
+		font-size: 14px;
+	}
+	.form-group {
+		margin-bottom: 15px;
+	}
+}

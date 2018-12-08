@@ -1,0 +1,83 @@
+.on-off-button {
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  label {
+    margin-bottom: 0px;
+  }
+  .switch input {display:none;}
+
+  .slider-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $rular-color;
+    -webkit-transition: all .4s;
+    transition: all.4s;
+  }
+
+  .slider-btn:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+
+  input:checked + .slider-btn {
+    background-color: $light-green;
+  }
+
+  input:focus + .slider-btn {
+    box-shadow: 0 0 1px $light-green;
+  }
+
+  input:checked + .slider-btn:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    -o-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider-btn.round {
+    border-radius: 34px;
+  }
+
+  .slider-btn.round:before {
+    border-radius: 50%;
+  }
+  &.with-text {
+    position: relative;
+    padding-left: 75px;
+    .switch {
+      position: absolute;
+      left: 0px;
+    }
+    .label-text {                 
+      padding-top: 5px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px)  {
+  .on-off-button {
+    &.with-text {
+      .label-text {
+        padding-top: 5px;
+      }
+    }
+  }
+}
+

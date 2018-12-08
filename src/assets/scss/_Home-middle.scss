@@ -1,0 +1,441 @@
+.middle-box{
+	margin: 45px 0;			
+	.h1{
+		display: block;
+		font-size: 36px;
+		line-height: 46px;
+		color: $light-color;
+		margin: 0px;	
+		font-family: $secondary-Regular;
+		font-weight: 400;
+		overflow: hidden;
+	}		
+	i.fa-question-circle {
+		font-size: 28px;
+		color: $light-color;
+		float: right;
+		line-height: 46px;		
+	}
+}
+
+.gettingBox {
+	padding: 15px 0px;
+	background-color: $decimal-color;
+	h1 {
+		color: $light-color;
+		font-weight: 400;
+		font-size: 24px;
+	}
+}
+
+.startBox {	
+	.login-top {
+		padding-bottom: 50px;
+	}	
+}
+
+.contactinfoBox {
+
+}
+
+.select-benefits {	
+	.form-group {
+		margin-bottom: 32px;
+	}
+}
+
+.plan-overviewbox {
+	border: 1px solid $septenary-color;
+	.top-heading {
+		padding: 16px 65px 16px 50px;
+		background-color: $quaternary-color;
+		position: relative;
+		&.with-icon {
+			padding-left: 80px;
+		}
+		.fa-exclamation-circle {
+			font-size: 35px;
+			line-height: 28px;		
+			width: 30px;	
+			color: $primary-color;
+			background-color: $light-color;
+			@include border-radius(50%);
+			position: absolute;
+			right: 30px;
+			top: 14px;
+		}
+		h3, h2 {
+			color: $light-color;
+		}
+		h2 {
+			margin-bottom: 0px;
+		}
+		.top-icon {
+			width: 57px;
+			background-color: $octonary-color1;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			text-align: center;
+			span {
+				font-size: 34px;
+				line-height: 57px;
+				&:before {
+					color: $light-color;					
+				}				
+			}
+		}
+	}
+	.profile-info {
+		padding: 25px 50px;
+		background-color: $quaternary-color2;
+		ul {
+			li {
+				margin-top: 12px;
+				font-family: $secondary-Regular;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 22px;
+				color: $black;
+				position: relative;				
+				&:first-child {
+					margin-top: 0px;
+				}
+			}
+		}
+		&.with-edit-close {
+			ul {
+				li {
+					padding-right: 65px;
+					.edit-closed-btn {
+						position: absolute;
+						right: 0px;
+						top: -2px;
+					}
+				}
+			}
+		}
+	}
+	.process-info {
+		padding: 20px 50px 30px;
+		&.minheight {
+			min-height: 106px;
+		}
+	}
+	.add-content-info {
+		padding: 10px 30px;
+		background-color: $quaternary-color2;
+		&.with-TextBox {
+			position: relative;
+			padding-right: 160px;
+			.btn {
+				position: absolute;
+				right: 15px;
+				top: 10px;
+			}
+			&.with-checkbox {
+				padding-right: 185px;
+				.custom-check-label {
+					label {
+						font-size: 17px;						
+					}
+				}
+			}
+		}
+		&.without-absolute {
+			padding-top: 15px;
+		}
+	}
+	.plan-contact-info {
+		padding: 20px 45px;
+	}
+}
+
+.summery-details {
+	background-color: $octonary-color2;
+	.btn-secondary {
+		margin-right: 30px;
+	}
+}
+.add-notes-textbox {
+	a {
+		padding-left: 35px;		
+		position: relative;		
+		.icon-enrollmenthomepage {
+			font-size: 30px;
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 3px;
+			&:before {
+				color: $light-green;	
+			}		
+		}
+		&:hover {
+			text-decoration: none;
+			.icon-enrollmenthomepage { 
+				&:before {
+					color: #23527c;
+				}
+			}			
+		}
+	}	
+	.addition-notes {
+		display: none;
+		textarea{
+			min-height: 100px;
+		}
+	}
+}
+
+.carry-over {
+	p {
+		margin-bottom: 10px;	
+	}
+	.form-group {
+		margin-bottom: 15px;
+	}
+}
+.calender-date {
+	position: relative;
+	.fa-calendar {
+		position: absolute;
+		right: 7px;
+		top: 6px;
+		font-size: 24px;
+		color: $black;
+	}
+}
+
+.list-astric {
+	li {
+		position: relative;
+		padding-left: 15px;
+		&:before {
+			content: '*';
+			font-size: 20px;
+			line-height: 20px;
+			color: $black;
+			position: absolute;
+			left: 0px;
+			top: 5px;
+		}
+	}
+}
+
+.premium-rates {
+	.form-closed {
+		position: relative;
+		padding-right: 35px;
+		a.closed-icon {
+			font-size: 30px;
+			line-height: 30px;
+			color: $primary-color;
+			position: absolute;
+			right: 0px;
+			top: 2px;
+		}
+	}
+}
+
+.feed-filebox {
+	.table {
+		&.plan-overview-table {
+			tr {
+				th {
+					border-bottom: 1px solid #ccc;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+	.plan-contact-info {
+		position: relative;
+		padding-right: 190px;
+		.filefeed-button {
+			position: absolute;
+			right: 0px;
+			top: 55px;
+		}		
+	}
+}
+
+@media only screen and (max-width: 1279px)  {
+
+
+}
+
+@media only screen and (max-width: 991px)  {
+	.plan-overviewbox {
+		.top-heading {
+			padding-left: 15px;
+			padding-right: 40px;
+			.top-icon {
+				width: 50px;
+				span {
+					line-height: 51px;
+				}				
+			}
+			.fa-exclamation-circle {
+				right: 10px;
+				font-size: 28px;
+				line-height: 23px;
+				width: 24px;
+				top: 13px;
+			}
+			&.with-icon {
+				padding-left: 63px;
+			}
+			h2, h3 {
+				font-size: 18px;
+			}
+		}
+		.profile-info {
+			padding: 20px 15px;
+		}
+		.process-info {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.plan-contact-info {
+			padding: 15px;
+		}
+		.add-content-info {
+			padding-left: 15px;
+			padding-right: 15px;
+			&.with-TextBox {
+				padding-top: 15px;
+				padding-right: 15px;
+				.form-group {
+					margin-bottom: 15px;
+				}
+				.btn {
+					position: static;
+					width: 100%;
+				}
+				&.with-checkbox {
+					padding-right: 15px;
+				}
+			}
+			&.without-absolute {
+				.form-group {
+					margin-bottom: 15px;
+				}
+			}			
+		}
+	}
+
+	.feed-filebox {
+		.plan-contact-info {
+			padding-right: 0px;
+			.filefeed-button {
+				position: static;
+				padding-top: 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px)  {
+
+	.middle-box {		
+		.h1 {
+			font-size: 26px;
+			line-height: 36px;						
+			i {
+				line-height: 36px;
+			}
+		}
+	}	
+	.startBox {		
+		text-align: center;
+		p {			
+			margin-bottom: 30px;
+		}		
+		.login-top  {
+			padding-bottom: 30px;
+			border-bottom: 1px solid #ccc;
+		}
+	}
+	.middle-box {
+		margin: 25px 0px;
+	}
+
+	.plan-overviewbox {
+		.top-heading {
+			.top-icon {
+				span {
+					font-size: 28px;
+				}
+			}
+		}		
+		.profile-info {
+			ul {
+				li {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			&.with-edit-close {
+				ul {
+					li {
+						.edit-closed-btn {
+							top: -4px;
+						}
+					}
+				}
+			}
+		} 
+		.process-info {
+			padding-bottom: 20px;
+			label {
+				font-size: 16px;
+			}
+			&.minheight {
+				min-height: inherit;
+			}
+		}
+		.add-content-info {
+			&.with-TextBox {
+				padding-right: 15px;
+				padding-bottom: 15px;
+				.btn {
+					position: static;
+				}
+			}
+		}
+	}
+
+	.summery-details {		
+		.btn-secondary {
+			margin: 0px 0 10px;			
+		}
+	}
+
+	.add-notes-textbox {
+		a {
+			.icon-enrollmenthomepage {
+				top: 0px;
+			}
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: 374px)  {
+	.plan-overviewbox {
+		.top-heading {
+			.top-icon {
+				width: 43px;				
+				height: 49px;
+			}
+			&.with-icon {
+				padding-left: 50px;
+			}
+			h2 {
+				font-size: 16px;
+			}
+		}
+	}
+}
